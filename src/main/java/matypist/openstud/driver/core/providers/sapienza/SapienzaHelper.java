@@ -282,6 +282,9 @@ class SapienzaHelper {
                 case "nome":
                     st.setFirstName(kapitalize.capitalize(response.getString("nome")));
                     break;
+                case "aliasNome":
+                    st.setFirstName(kapitalize.capitalize(response.getString("aliasNome")));
+                    break;
                 case "dataDiNascita":
                     String dateBirth = response.getString("dataDiNascita");
                     if (!(dateBirth == null || dateBirth.isEmpty())) {
